@@ -31,7 +31,7 @@ public class DemoController {
 	
 	@RequestMapping(value="/demoShow", method=RequestMethod.GET)
 	public String demoShow(Model model){
-		model.addAttribute("name", "shipengfei");
+		model.addAttribute("name", "name test");
 		model.addAttribute("time", new Date());
 		logger.info("DemoController: from controller.");
 		return "demo";
